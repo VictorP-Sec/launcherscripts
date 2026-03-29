@@ -9,43 +9,34 @@
 
 ---
 
-**LauncherScripts** es una Single Page Application (SPA) diseñada para transformar tu perfil de GitHub en un panel interactivo de herramientas. Organiza tus repositorios como aplicaciones individuales, permitiéndote explorar su documentación y descargarlos con un solo clic.
+**LauncherScripts** es una Single Page Application (SPA) diseñada para transformar tu perfil de GitHub en un panel interactivo de herramientas. Olvida el buscar entre carpetas; esta web organiza tus repositorios como si fueran aplicaciones individuales, optimizada para móvil y escritorio.
 
 ## 🔥 Funcionalidades Estrella
 
-### 🎨 Diseño Híbrido Profesional
-* **Cabecera Dark Permanente:** La zona de búsqueda y navegación se mantiene en negro profundo para un contraste elegante.
-* **Cuerpo Light Refinado:** El contenido utiliza el gris suave oficial de GitHub (`#f6f8fa`), evitando la fatiga visual.
-* **Modo Dual:** Cambia entre tema claro y oscuro con un solo clic; la app recordará tu elección.
-
-### 📥 Descarga Inteligente (Smart Fetch)
-El sistema analiza el contenido del repositorio para ofrecerte la mejor opción:
-* **Repositorios Completos:** Si tiene más de 3 archivos, descarga un **paquete ZIP**.
-* **Scripts Ligeros:** Si tiene 3 o menos, descarga directamente el archivo `.py` y el `README.md`.
-
-### 📱 Experiencia Móvil Optimizada
-* **Interfaz Adaptable:** Los botones y tarjetas se ajustan automáticamente para ser fáciles de tocar en pantallas pequeñas.
-* **Nombres Limpios:** Los nombres de los repositorios se formatean automáticamente para que se vean impecables (ej. `mi-script__` ➔ **Mi Script**).
-
----
-
-## 📖 Visor de Documentación
-El botón de **Detalles** abre un visor que renderiza el `README.md` original del repositorio. Gracias a la integración con `github-markdown-css`, verás las tablas, códigos y negritas tal cual aparecen en GitHub.
+| Función | Descripción |
+| :--- | :--- |
+| 📂 **Repositorios como Módulos** | Limpieza de nombres automática (ej. `script__` ➔ **Script**) y diseño de tarjetas moderno. |
+| 📥 **Descarga Inteligente** | **Modo Paquete:** ZIP para repos complejos. <br> **Modo Ligero:** Solo `.py` y `README.md`. |
+| 🌓 **Diseño Híbrido & Temas** | Cabecera Dark permanente con cuerpo ajustable (Modo Claro/Oscuro) y persistencia. |
+| 📖 **Visor de Markdown** | Renderizado fiel con el CSS oficial de GitHub para leer la documentación sin salir de la app. |
+| 📱 **Mobile First** | Interfaz adaptada a móviles con botones táctiles grandes y nombres con auto-recorte. |
 
 ---
 
 ## 🛠️ Stack Tecnológico
+
 * **Frontend:** HTML5, CSS3, JavaScript (ES6+).
-* **Renderizado:** `github-markdown-css` para una estética nativa.
-* **API:** GitHub REST API.
+* **Renderizado:** `github-markdown-css` (Soporte dual para tema claro/oscuro).
+* **API:** GitHub REST API con persistencia vía `localStorage`.
 * **Hosting:** [Vercel](https://vercel.app).
 
 ---
 
-## 🚀 Cómo usarlo
-1. **Sube tus scripts** a repositorios individuales en GitHub.
-2. **Añade un README.md** con las instrucciones de cada script.
-3. **Entra en [LauncherScripts](https://launcherscripts.vercel.app/)**, pon tu usuario y ¡listo!
+## 🚀 Cómo usarlo para tus propios scripts
+
+1. **Prepara tu Repo:** Crea un repositorio en GitHub para cada herramienta o script.
+2. **Documenta:** Asegúrate de incluir un `README.md` con las instrucciones.
+3. **Lanza:** Entra en [LauncherScripts](https://launcherscripts.vercel.app/), pon tu usuario y ¡disfruta de tu biblioteca organizada!
 
 ---
 
